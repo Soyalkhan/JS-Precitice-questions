@@ -536,16 +536,32 @@
 //   let sum = ( n1 + n2)
 // console.log(sum);
 
-//
+
 // #31 Create a function that will return the number of words in a text
-function getWordCount(s) {
-  // Using a regular expression to split the text into words
-  // \S matches any non-whitespace character, and the '+' quantifier matches one or more occurrences
-  const wordArray = s.match(/\S+/g);
-  // Returning the length of the words array, which represents the count of words
-  return wordArray ? wordArray.length : 0;
+
+// function getWordCount(s) {
+//   // Using a regular expression to split the text into words
+//   // \S matches any non-whitespace character, and the '+' quantifier matches one or more occurrences
+//   const wordArray = s.match(/\S+/g);
+//   // Returning the length of the words array, which represents the count of words
+//   return wordArray ? wordArray.length : 0;
+// }
+// let str =
+//   "The name start from the zero not directly hello im para please count me";
+// let CountOfWord = getWordCount(str);
+// // console.log("Numbers words count:", CountOfWord);
+
+
+// #32 Create a function that will capitalize the first letter of each word in a text
+
+let str = "soyal is good boy heheheh";
+// let b = str.toUpperCase()
+// console.log("str",b);
+const convertFirstLatterToUppercase = (text)=>{
+  console.log(text);
+  let upper = text.toUpperCase()
+  console.log(upper);
+  return text
 }
-let str =
-  "The name start from the zero not directly hello im para please count me";
-let CountOfWord = getWordCount(str);
-// console.log("Numbers words count:", CountOfWord);
+
+convertFirstLatterToUppercase(str)
