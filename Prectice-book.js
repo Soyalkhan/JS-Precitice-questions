@@ -554,14 +554,30 @@
 
 // #32 Create a function that will capitalize the first letter of each word in a text
 
-const toUpperCaseFirstLetter = (string)=>{
-  let newStr = string.split(" ");
-  for(i = 0;i < newStr.length;i++){
-    let capitalizeWord = newStr[i].charAt(0).toUpperCase() + newStr[i].slice(1);
-    newStr[i] = capitalizeWord;
-  }
+// const toUpperCaseFirstLetter = (string)=>{
+//   let newStr = string.split(" ");
+//   for(i = 0;i < newStr.length;i++){
+//     let capitalizeWord = newStr[i].charAt(0).toUpperCase() + newStr[i].slice(1);
+//     newStr[i] = capitalizeWord;
+//   }
 
-  return newStr.join(" ");
-}
-let str = "this is first paragraph";
-console.log(toUpperCaseFirstLetter(str));
+//   return newStr.join(" ");
+// }
+// let str = "this is first paragraph";
+// console.log(toUpperCaseFirstLetter(str));
+
+
+// 33: #Calculate the sum of numbers received in a comma delimited string
+
+// const StringToInt = (number) =>{
+//   let sum = 0;
+//   let num = number.split(",")
+//   console.log(num);
+//   for(n of num){
+//     let newNum = parseInt(n);
+//     console.log(newNum);
+//     sum += newNum;
+//   }
+//   console.log("sum is number:",sum);
+// } 
+// StringToInt("20,30,40,50,30,20,50,60,70");
