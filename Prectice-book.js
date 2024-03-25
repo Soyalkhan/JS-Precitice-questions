@@ -554,14 +554,14 @@
 
 // #32 Create a function that will capitalize the first letter of each word in a text
 
-let str = "soyal is good boy heheheh";
-// let b = str.toUpperCase()
-// console.log("str",b);
-const convertFirstLatterToUppercase = (text)=>{
-  console.log(text);
-  let upper = text.toUpperCase()
-  console.log(upper);
-  return text
-}
+const toUpperCaseFirstLetter = (string)=>{
+  let newStr = string.split(" ");
+  for(i = 0;i < newStr.length;i++){
+    let capitalizeWord = newStr[i].charAt(0).toUpperCase() + newStr[i].slice(1);
+    newStr[i] = capitalizeWord;
+  }
 
-convertFirstLatterToUppercase(str)
+  return newStr.join(" ");
+}
+let str = "this is first paragraph";
+console.log(toUpperCaseFirstLetter(str));
