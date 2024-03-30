@@ -536,7 +536,6 @@
 //   let sum = ( n1 + n2)
 // console.log(sum);
 
-
 // #31 Create a function that will return the number of words in a text
 
 // function getWordCount(s) {
@@ -550,7 +549,6 @@
 //   "The name start from the zero not directly hello im para please count me";
 // let CountOfWord = getWordCount(str);
 // // console.log("Numbers words count:", CountOfWord);
-
 
 // #32 Create a function that will capitalize the first letter of each word in a text
 
@@ -566,7 +564,6 @@
 // let str = "this is first paragraph";
 // console.log(toUpperCaseFirstLetter(str));
 
-
 // 33: #Calculate the sum of numbers received in a comma delimited string
 
 // const StringToInt = (number) =>{
@@ -579,5 +576,79 @@
 //     sum += newNum;
 //   }
 //   console.log("sum is number:",sum);
-// } 
+// }
 // StringToInt("20,30,40,50,30,20,50,60,70");
+
+// #34  Create a function that returns an array with words inside a text.
+
+// function extractWords(para) {
+//   // Using a regular expression to match words
+//   // const wordsArray = text.match(/\b\w+\b/g);
+//   const wordsArray = para.split(" ")
+//   return wordsArray; // Return an empty array if no words found
+// }
+
+// // Example usage:
+// const para = "This is a paragraph green yellow red soyal tushar ritvik.";
+// console.log("This is an line : ",para);
+// const words = extractWords(para);
+// console.log(words);
+
+// #35 Create a function to convert a CSV text to a “bi-dimensional” arra
+
+
+// const csvToArray = (csvText) => {
+//   const lines = csvText.trim().split("\n");// remove if any space
+//   const result = [];// empty array to store data
+
+//   //fetch data
+//   for (d of lines) {
+//     const values = d.split(",");// split data by ","
+//     result.push(values);// push data to 
+//   }
+//   return result;
+// };
+// const csvText = `
+// Name, Age, Country
+// soyak, 25, delhi
+// rohan, 30, up
+// mohan, 30, mp
+// `;
+
+// const array2D = csvToArray(csvText);
+// console.log(array2D);
+
+
+// #36 Create a function that converts a string to an array of character
+
+// const ArrToChar = (str) =>{
+//   const arr = []
+// let finVal = str.trim()
+// for( a of finVal){
+//   arr.push(a)
+// }
+// console.log(arr);
+// return arr
+// }
+// let str = "This is sample string";
+// ArrToChar(str)
+
+
+
+// #37 : Create a function that will convert a string in an array containing the ASCII/Unicode codes of 
+// each character
+
+// const showASCII = (str) =>{
+// const arr = []
+// for( a of str){
+//   let newNum = a.charCodeAt(a);
+//   arr.push(newNum)
+//   // console.log(newNum);
+// }
+// console.log(arr);
+// }
+// let txt = "Hello"
+// showASCII(txt);
+
+
+// #38
